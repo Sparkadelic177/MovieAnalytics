@@ -1,17 +1,16 @@
 import { Text, View, Image } from "react-native";
 import styles from "../styles/moviePoster.js";
 
-const MoviePoster = ({ title, posterImage }) => {
+const MoviePoster = ({ posterImage, title }) => {
   return (
-    <View styles={styles.posterContainer}>
+    <View style={styles.posterContainer}>
       <Image
-        styles={styles.posterImage}
+        style={styles.posterImage}
         source={{
-          uri: "https://m.media-amazon.com/images/M/MV5BMTgxMjI2NzgxMl5BMl5BanBnXkFtZTcwMDIyMzk3NA@@._V1_SX300.jpg",
-          cache: 'only-if-cached'
+          uri: posterImage
         }}
       />
-      <Text styles={styles.posterText}>{title}</Text>
+      <Text style={styles.posterText}>{title}</Text>
     </View>
   );
 };

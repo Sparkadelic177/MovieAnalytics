@@ -15,5 +15,11 @@ export default StyleSheet.create({
     input: {
         width: '70%',
         height: '40%'
+    },
+    moviePostersContainer: {
+        marginTop: 20,
+        display: 'flex',
+        flexDirection: 'row',
+        overflow: 'scroll'
     }
 });
